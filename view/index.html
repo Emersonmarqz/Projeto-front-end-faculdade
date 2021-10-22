@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Brasil</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Fique por dentro dos melhores coteúdos sobre NBA!<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="#" onclick="toggleMenu();">Franquias</a></li>
+            <li><a href="#" onclick="toggleMenu();">Estrelas NBA</a></li>            
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content" style="color: black !important;">
+            <h2>NBA Brasil!</h2>
+            <p>Viva os seus sonhos</p>
+            <a href="#" class="btn">Historia</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>H</span>istória</h2>
+                <p> A NBA é uma das 4 'major leagues' de esporte profissional
+                    na América do Norte. ... A liga foi fundada na cidade de
+                    Nova Iorque em 6 de Junho de 1946, como a Basketball 
+                    Association of America (BAA). A liga adotou o nome de
+                    National Basketball Association em 1949 quando se 
+                    fundiu com a rival National Basketball League (NBL).
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="../assets/img/nbaBrasil2.jpg"div>
+                </div>
+            </div>
+    </section>
+
+    <div class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText"><span>E</span>strelas NBA</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../assets/img/LebronLakers.png">
+                </div>
+                <div class="text">
+                    <h3>Lebron James</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../assets/img/curry.jpg">
+                </div>
+                <div class="text">
+                    <h3>Stephen Curry</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../assets/img/dondic.jpg">
+                </div>
+                <div class="text">
+                    <h3>Luka Dondic</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../assets/img/durant.jpg">
+                </div>
+                <div class="text">
+                    <h3>Kevin Durant</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../assets/img/Giannis.jpg">
+                </div>
+                <div class="text">
+                    <h3>Giannis Antetokounmpo</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn">Ver Todos</a>
+        </div>
+        </section>
+
+        <section class="expert" id="expert">
+            <div class="title">
+                <h2 class="titleText"><span>F</span>ranquias</h2>
+                <p>As principais franquias que disputam o maior campeonato de basquete do mundo!</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="../assets/img/lakers.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Los Angels Lakers</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="../assets/img/goldlenstateWarrios.png">
+                    </div>
+                    <div class="text">
+                        <h3>Golden State Warrios</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="../assets/img/bulls.png">
+                    </div>
+                    <div class="text">
+                        <h3>Chicago Bulls</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="../assets/img/miameHeat.png">
+                    </div>
+                    <div class="text">
+                        <h3>Miami Heat</h3>
+                    </div>
+                </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="title">
+                <h2 class="titleText"><span>C</span>ontate-Nos</h2>
+                <p>Faça parte da grande Comunidade de NARUTO e vire cidadão de Konoha</p>
+            </div>
+            <div class="contactForm">
+                <h3>Enviar Mensagem</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="Name"></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </section>
+
+        <div class="copyrightText">
+            <p>Copyright 2021 <a href="#">Emerson Marqz</a>. All Right Reserved</p>
+        </div>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', function () {
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+
+            function toggleMenu(){
+               const menuToggle = document.querySelector('.menuToggle');
+               const navigation = document.querySelector('.navigation');
+               menuToggle.classList.toggle('active');
+               navigation.classList.toggle('active');
+            }
+        </script>
+</body>
+
+</html>
